@@ -24,6 +24,8 @@ clearBtn.addEventListener("click", clearItems);
 window.addEventListener("DOMContentLoaded", setupItems);
 
 // function
+
+//additem
 function addItem(e) {
   e.preventDefault();
   //   console.log(grocery.value);
@@ -66,6 +68,7 @@ function displayAlert(text, action) {
 //clear list
 function clearItems() {
   const items = document.querySelectorAll(".grocery-item");
+  console.log(items.children);
   if (items.length > 0) {
     items.forEach(function (item) {
       list.removeChild(item);
